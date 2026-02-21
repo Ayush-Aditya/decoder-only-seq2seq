@@ -1,0 +1,19 @@
+experiment:
+  output_dir: runs
+
+data:
+  num_samples: 10000      
+  max_len: 10
+  pad_token_id: 0
+
+model:
+  vocab_size: 50
+  d_model: 128
+  nhead: 4
+  num_layers: 2
+  max_len: 32
+
+training:
+  batch_size: 8            
+  lr: 0.001
+  max_epochs: 10     
