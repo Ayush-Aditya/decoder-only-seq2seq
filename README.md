@@ -73,32 +73,15 @@ decoder-only-seq2seq/
 				└── generate.py
 ```
 
-## Installation
-
-Create environment:
+## Quick Start
 
 ```bash
+# Create environment
 python -m venv venv
-```
+source venv/Scripts/activate  # or . venv/bin/activate on Mac/Linux
 
-Activate:
-
-Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Mac/Linux
-
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install torch ignite pyyaml
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Training
