@@ -1,4 +1,4 @@
-# 🔥 Decoder-Only Seq2Seq (Reverse String)
+# Decoder-Only Seq2Seq (Reverse String)
 
 PyTorch + Ignite Implementation
 
@@ -48,7 +48,7 @@ Features:
 - Cross-entropy loss
 - Ignite-based trainer & evaluator
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 decoder-only-seq2seq/
@@ -138,7 +138,7 @@ Then:
 
 This matches observed behavior.
 
-## 🔎 Inference (Checkpoint Test)
+## Inference (Checkpoint Test)
 
 After training, run:
 
