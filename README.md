@@ -29,12 +29,6 @@ This is implemented as a decoder-only sequence-to-sequence setup:
 - Padding mask is enabled
 - Loss = CrossEntropy with `ignore_index=pad_token_id`
 
-This ensures the model:
-
-- Conditions on the full source
-- Predicts only the target
-- Does not cheat using future tokens
-
 ## Architecture
 
 Model: `DecoderOnlyTransformer`
@@ -136,8 +130,6 @@ Then:
 
 `seq_acc ≈ 0.99^8 ≈ 0.92`
 
-This matches observed behavior.
-
 ## Inference (Checkpoint Test)
 
 After training, run:
@@ -164,14 +156,14 @@ Random unseen samples should also show high exact match once trained.
 ![Training Example](docs/Training_loss_metrics.png)
 ![Inference Example](docs/Sample_output.png)
 
-##  What This Repo Demonstrates
+##  What This Repo Code Contains
 
-✔ Proper decoder-only seq2seq conditioning  
-✔ Correct teacher-forcing batch construction  
-✔ Stable dataset sampling  
-✔ Accurate masking (causal + padding)  
-✔ Ignite-based training loop  
-✔ End-to-end checkpoint validation
+Proper decoder-only seq2seq conditioning  
+Correct teacher-forcing batch construction  
+Stable dataset sampling  
+Accurate masking (causal + padding)  
+Ignite-based training loop  
+End-to-end checkpoint validation
 
 ##  Repo Hygiene
 
